@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Css background-clip</title>
+    <meta charset="utf-8"/>
+    <style>
+        html, body{
+          margin: 0;
+
+        }
+        .heading{
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+            padding: 20px;
+            box-sizing:border-box;
+            border: 10px dashed #ccc;
+            background-clip: border-box;
+            /* background-clip: content-box;
+            background-clip: padding-box; */
+         
+        }
+        .heading1{
+            width: 100%;
+            height: 100vh;
+            /* background-image: linear-gradient(0,#333,#ccc); */
+            background-image: linear-gradient(180deg,rgba(225,225,0,0.5),rgba(0,0,225,0.5)),
+             url(https://static.wikia.nocookie.net/p__/images/7/7c/Killua-2011.png/revision/latest/top-crop/width/360/height/360?cb=20160215183628&path-prefix=protagonist)
+            , url(https://i.pinimg.com/236x/cd/17/14/cd1714b4fdb9ee212af76a86ce93576e.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat; 
+            border: 20px dashed #ccc;
+            padding: 20px;
+            box-sizing: padding-box;
+            /* background-origin: border-box; */
+            background-origin: content-box;
+            background-position:top center;
+            /* background-size: contain; cố gắng lấy lớn nhất có thể của chiều ngang  */
+             /* background-size: cover; cố gắng lấy lớn nhất có thể của chiều ngang  */
+            
+             /* background-position: 10%; */
+             /* background-position: top 20px right -20px; */
+             /* background-position: 0 0 ;  x,y trục tọa độ của thẻ chứa nó*/
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            /* background: chocolate url(https://i.pinimg.com/236x/cd/17/14/cd1714b4fdb9ee212af76a86ce93576e.jpg) no-repeat center /contain; */
+
+         
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="heading"></div>
+<br/>
+<div class="heading1"></div>
+</body>
+
+
+</html>

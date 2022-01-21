@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--start -->
+<html>
+    <head>
+        <title>F8-Shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  href="asset\css\style.css"></link>
+        <style>
+
+        h1#heading-id.heading-class {
+                color: purple;
+            }
+            #heading-id {
+                color:violet;
+            }
+            .heading-class {
+                color:yellow;
+            }
+            h1 {
+                    color: red;
+              }
+              .box{
+                width:100px;
+                height :100px;
+                background-color: red;
+              }
+              .box2{
+                width:50%;
+                height :100px;
+                background-color: rgb(98, 0, 255);
+              }
+              div.box3{
+                  font-size : 50px;
+              }
+              h1.box3{
+                  font-size: 1rem;
+              }
+              .box4{
+               
+                width:calc(50% +20%);
+                height :100px;
+                background-color: rgb(255, 0, 221);  /* rgba() có thể nhìn xuyên thấu */
+              
+              }
+              .box4::after{
+                    /* content: "day là content binh thương"; */
+                 content: attr(data-title); 
+
+                }
+                
+        </style>
+
+
+       
+    </head>
+    <!--midle -->
+    
+    <!--to hop phim ctrl+/ -->
+    <body>
+          <!-- giới thiệu các thẻ trong html -->
+          <h1>Hello Cac Ban</h1>
+          <h2>Hello Cac Ban</h2>
+          <h3>Hello Cac Ban</h3>
+          <h4>Hello Cac Ban</h4>
+          <h5>Hello Cac Ban</h5>
+          <h6>Hello Cac Ban</h6>
+
+        <p>Khóa học đề cao việc thực hành qua những ví dụ trong thực tế giúp học viên nhanh chóng xây dựng được giao diện website</p>
+        <p>Tôi cần một khóa học đề cao việc thực hành qua những ví dụ trong thực tế giúp học viên nhanh chóng xây dựng được giao diện website</p>
+        <a href="https://www.youtube.com/F8VNOfficial">F8 Youtube Channel</a>
+        <img  width="250" src="https://img.youtube.com/vi/R6plN3FvzFY/sddefault.jpg"/>
+        <ul>
+            <li>HTML, CSS từ zero đến Hero</li>
+            <li>Thiết kế web responsive</li>
+            <li>Lập trình Javascript cơ bản</li>
+            <li>Lập trình Javascript nâng cao</li>
+            <li>Nhiều khóa học khác từ Front-end, tới Back-end, Mobile, Devops</li>
+        </ul>
+
+        <ol>
+            <li>HTML, CSS từ zero đến Hero</li>
+            <li>Thiết kế web responsive</li>
+            <li>Lập trình Javascript cơ bản</li>
+            <li>Lập trình Javascript nâng cao</li>
+            <li>Nhiều khóa học khác từ Front-end, tới Back-end, Mobile, Devops</li>
+        </ol>
+       
+<table> <!-- Thẻ table để tạo layout dạng bảng -->
+<thead><!-- Thẻ thead chứa phần tiêu đề bảng (table head) -->
+    <tr><!-- Thẻ tr là một dòng (table row) -->
+        <th>#</th>  <!-- Thẻ th chứa cột tiêu đề (table heading) -->
+        <th>Tên khóa học</th>
+        <th>Giá</th>
+    </tr>
+</thead>
+    <tbody> <!-- Thẻ tbody chứa phần thân bảng (table body) -->
+        <tr>
+            <td>1</td> <!-- Thu 1 -->
+            <td>HTML, CSS từ zero đến Hero</td> <!-- ten khoa hoc -->
+            <td>Miễn phí</td>  <!-- gia -->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Thiết kế web responsive</td>
+            <td>Miễn phí</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lập trình Javascript cơ bản</td>
+            <td>Miễn phí</td>
+        </tr>
+    </tbody>
+</table>
+</br>
+<!-- lam bai tap tai day -->
+<div>
+    Tên đăng nhập
+    <input type="text">
+    Mật khẩu
+    <input type="password">
+</div>
+<div>
+    <input name="gender" type="radio">
+    Nam
+    <input name="gender" type="radio">
+    Nữ
+    <input name="gender" type="radio">
+    Khác
+</div>
+<div>
+    <input name="answer" type="checkbox">
+    Đáp án 1
+    <input name="answer" type="checkbox">
+    Đáp án 2
+    <input name="answer" type="checkbox">
+    Đáp án 3
+   <input name="answer" type="checkbox">
+     Đáp án 4
+</div>
+<div>
+    <input type="submit" value="Đăng ký">
+</div>
+<!-- Làm bài tập tại đay attribute  -->
+<h1 title="HTML, CSS từ zero đến Hero">Học về attribute trong HTML</h1>
+<a href="https://fullstack.edu.vn/" >Học HTML tại F8</a>
+<img src="https://img.youtube.com/vi/0SJE9dYdpps/sddefault.jpg" width="250" title="Lập trình Javascript cơ bản"> </img>
+
+<h1 style="color: red; font-size: 28px">Sử dụng CSS Inline</h1>    
+
+<div id="main">
+    <div class="header"></div>
+    <div class ="nav"></div>
+    <div class ="container">
+        <h1 calss="heading">Tôi đang đều đặn học lập trình mỗi ngày</h1>
+
+    </div>
+    <div class ="footer"></div>
+</div>
+
+<div> 
+    <h1 style="color: blue;" id="heading-id" class="heading-class">Priority</h1>
+    <ol>
+        <li>Internal,External - </li>
+        <li>Inline  - 1000</li>
+        <li>#id-100</li>
+        <li>tag -1</li>
+        <li>Equal specificity</li>
+        <li>Universal selector and inherited?</li>
+</ol>
+</div>
+<div>
+    <h2>Hello Cac Ban</h2>
+
+</div>
+<div class="box"></div>
+<div class="box2"></div>
+<div class="box3">
+    
+    <h1>test rem</h1>
+
+</div>
+<div>
+    <h1>CSS units(đơn vị css)</h1>
+    <h2>1.Absolute units? (không thay đổi kich thước cho dù màn hình thay đổi)</h2>
+    <ul>
+        <li>px </li>
+        <li>pt</li>
+        <li>cm</li>
+        <li>mm</li>
+        <li>inch</li>
+        <li>pc</li>
+    </ul>
+<h2>2.Relative units (giá trị tương đối không cố định sẽ thay đổi phụ thuộc vào thẻ chứa nó)</h2>
+<ul>
+    <li>%</li>
+    <li>rem</li> <!--rem phụ thuộc vào thẻ html div.. -->
+    <li>em</li> <!--em phụ thuộc vào thẻ gần nhất có thuộc tính alf font size .. -->
+    <li>vw</li>
+    <li>vh</li> /*vw- width (chiều rộng trình duyệt), vh -height*/ /*viewport*/
+    <li>vmin</li>
+    <li>vmax</li>
+    <li>ex</li>
+    <li>ch</li>
+</ul>
+</div>
+<div >
+   
+    <h1>CSS Functions</h1>
+    <ul>
+        <li>var() </li>
+        <li>lienar-gradient()</li>
+        <li>rgba()</li>
+        <li>rgb()</li>
+        <li>calc()</li>
+        <li>attr()</li>
+    </ul>
+    <div class="box4" data-title="đây là bông màu hồng"></div>
+    <a class="a1" href="https://fullstack.edu.vn/">Hoc lap trinh </a>
+</div>
+
+<div >
+   
+    <h1 class="heading1">CSS pseudo-class (lớp giả class)</h1>
+    <ul>
+        <li class="li1">:root -- thẻ gốc</li>
+        <li class="li1"> :hover  -- được kích hoạt khi di chuột vào </li>
+        <li class="li1">:active  -- kích hoạt khi kích chuột</li>
+        <li class="li1">:first-child -- selector con đầu tiên </li>
+        <li class="li1">:last-child -- -- selector con cuối cùng</li>
+        
+    </ul>
+    <div class="box5" ></div>
+  
+</div>
+
+
+<div >
+   
+    <h1 class="heading2">CSS pseudo-element (phần tử giả) <br/> dòng thứ 2</h1>
+    
+    <ul>
+        <li class="li2">::before</li>
+        <li class="li2">::after</li>
+        <li class="li2">::first-letter -- chữ cái đầu tiên</li>
+        <li class="li2">::first-line  -- dòng đầu tiên </li>
+        <li class="li2">::selection -- sự lựa chọn (khi chuột bôi đen)</li>
+        
+    </ul>
+    <div class="box6" >
+
+    </div>
+  
+</div>
+</body>
+
+</html>

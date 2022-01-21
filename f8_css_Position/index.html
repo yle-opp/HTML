@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Css background-clip</title>
+    <meta charset="utf-8"/>
+    <style>
+        html, body {
+          margin: 0;
+
+        }
+        h1 {
+             position: relative; 
+             margin-top: 60px;
+             /* top : 100px;
+             left: 100px; chỉ khi call position mời sử dụng được top left right bottom */
+            /* margin-top: 100px ; */
+        }
+        li:nth-of-type(2) {
+            color: violet;
+        }
+        .box {
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+        }
+        .box-child {
+            width: 50px;
+            height: 50px; 
+            background-color: #fff;
+            position: absolute;
+            /* top :0px ;
+            bottom: 0px ;
+            right: 0px ;
+            left: 0px ;
+             */
+        }
+         .box2 { /*thẻ cha gần nhất */
+            width: 300px;
+            height: 100px;
+            background-color: violet;
+            position: relative;
+        }
+        .header {
+            width: 100%;
+            height: 42px; 
+            background-color: blue;
+            position: fixed;
+            top : 0;
+            /* bottom: 0; */
+        
+        }
+        ul {
+            height: 2000px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <div class="box2">
+                <div class="box-child"></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="header"></div>
+<h1>Css Position</h1>
+<ul>
+    <li>Relative-- vị trí tương đối</li>
+    <li>Absolute -- vị trí tuyệt đối, phụ thuộc thẻ cha lớn nhất làm góc tọa độ</li>
+    <li>Fixed -- vị trí phụ thuộc vào khung trình duyệt</li>
+    <li>Sticky-- vị trí bám dính thuộc vào khu trình duyệt</li>
+</ul>
+
+</body>
+
+
+</html>
