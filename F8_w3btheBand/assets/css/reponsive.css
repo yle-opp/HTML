@@ -1,6 +1,17 @@
-/* Mobile */
+/* Mobile button là 42px */
 @media (max-width: 740px){
     
+       
+        .s-full-width,
+        .s-col-full {
+             width: 100%;
+        
+        }
+
+        .s-mt-8 {
+            margin-top: 8px !important ;
+        }
+
         #nav > li{
             display: block;  
         
@@ -36,17 +47,25 @@
         #nav li:first-child {
             display: inline-block;
         }
-        #content .member-item {
-            margin-top: 30px;
-             width: 100%; 
+
+        
+        .contact-form {
+            margin-top: 16px;
         }
-        #contact .contact-itiem {
-            margin-top: 30px;
-            padding-left: 8px;
-            padding-right: 8px;
-            
-           
-        }
+     
       
+}
+
+/* Mobile button là 48px */
+ @media (max-width: 1023px)  {
+    .btn {
+        padding: 15px 16px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+    }
+    #footer .social-list a {
+        padding: 15px;
+    }
 }
     
