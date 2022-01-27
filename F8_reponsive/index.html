@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reponsive</title>
+    <meta charset="utf-8"/>
+    
+    <style>
+    .pc ,
+    .tablet,
+    .mobile {
+        font-size: 68px;
+        display: none;
+    }
+    /* PC: >= 1024px 
+    tablet : >= 740px & < 1024px 
+    mobile : <=740px 
+    mean if màn hình <= 740px thì chạy vào đoạn code css  */
+    /*PC*/
+    @media (min-width: 1024px){
+        .pc {
+            display: block;
+        }
+    }
+    @media (min-width: 740px) and (max-width: 1023px) {
+        .tablet {
+            display: block;
+        }
+    }
+    @media (max-width: 740px){
+        .mobile {
+            display: block;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+
+<h1 class="pc">PC</h1>
+<h1 class="tablet">Tablet</h1>
+<h1 class="mobile">mobile phone</h1>
+</body>
+
+
+</html>
