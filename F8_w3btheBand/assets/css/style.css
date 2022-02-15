@@ -68,6 +68,8 @@ html {
     display: inline-block;
     text-decoration: none;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -186,7 +188,7 @@ html {
     position: relative;
     margin-top: 46px; /*để phần dix silder ko chiếm header*/
     padding-top: 50%; /*thỏa mãn chiều cao bằng 50% chiều ngang chính nó*/
-    background: url('/F8_w3btheBand/assets/img_e/silder/silder1.jpg') top center /cover no-repeat ;
+    background: url('../img_e/silder/silder1.jpg') top center /cover no-repeat ;
     
 }
 #slider .text-content {
@@ -208,6 +210,7 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content .content-section {

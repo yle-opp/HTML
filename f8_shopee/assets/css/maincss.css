@@ -1,0 +1,125 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header_navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+.header_navbar-item {
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px;
+}
+.header_navbar-icon-link {
+    color: var(--white-color);
+    text-decoration: none;
+}
+.header_navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header_navbar-item,
+.header__navbar-item-link,
+.header_navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header_navbar-item:hover,
+.header__navbar-item-link:hover,
+.header_navbar-icon-link:hover {
+    cursor: pointer;
+    color: rgba(225, 225, 225, 0.9);
+}
+
+.header_navbar-item--bold {
+    font-weight: 400;
+}
+.header_navbar-item--separate::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #fb9086;
+    height: 14px;
+    right: -9px;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+.header_navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.header_navbar-title--no-pointer {
+    cursor:text;
+    color: var(--white-color);
+}
+/* HEADER QR code*/
+.header__qr {
+    background-color: var(--white-color);
+    width: 186px;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 0;
+    display: none; 
+    animation: fadeIn ease-in .5s ; 
+    box-shadow: 0 1px 2px rgba(0 0 0 / 10%); 
+    z-index: 0;
+}
+.header__qr::before  {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    width: 100%;
+    top: -16px;
+   
+}
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+     opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+.header_navbar-item--has-qr:hover .header__qr{
+    
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+.header__pr-apps {
+    display: flex;
+   justify-content: space-between;
+}
+.header__qr-link:nth-child(1) {
+    margin-left: 11px;
+}
+
+.header__qr-link:nth-child(2) {
+    margin-right: 11px;
+}
+.header__qr-download-img {
+        height: 17px;
+}

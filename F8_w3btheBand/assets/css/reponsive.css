@@ -52,7 +52,10 @@
         .contact-form {
             margin-top: 16px;
         }
-     
+        
+        .contac-submit-btn {
+            
+        }
       
 }
 
@@ -64,8 +67,13 @@
     .contact-form .form-control {
         padding: 15px;
     }
-    #footer .social-list a {
-        padding: 15px;
+    .social-list a {
+        margin: 0 8px;  
+        font-size: 48px;    
+    }
+    .copyright {
+        padding: 12px 0;
+        display: inline-block;
     }
 }
     
