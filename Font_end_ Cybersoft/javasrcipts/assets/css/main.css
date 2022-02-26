@@ -1,0 +1,88 @@
+a {
+    text-decoration: none;
+}
+
+#container {
+    margin: 0 auto;
+    width: 500px;
+    height: 100%;
+    background: rgba(81, 226,189, 0.93); /*màu trong suốt của mà*/ 
+}
+
+.tabdangkynhap {
+    /* text-decoration: none; */
+    /* text-align: center; */
+    background-color: #C5C55C;
+    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+#dangnhap {
+    background-color: #e0d9d9;
+}
+a.tabdangkynhap:hover {
+    cursor: pointer;
+    background-color:gray  !important;
+}
+
+.divForm {
+ 
+}  
+ #divdangky {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+} 
+
+#divdangnhap {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.inputcss {
+    padding: 5px;
+    margin: 5px;
+} 
+.tdbutton {
+    padding: 10px;
+    background-color: yellow;
+    border: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border-radius: 15px;
+
+   
+}
+#nutdangky:hover {
+
+    cursor: pointer;
+    background-color:gray  !important;
+}
+
+#pthongbao {
+    color: red;
+    padding: 20px;
+    background-color: yellow;
+    display: none;
+}
+.drnghenghiep {
+    text-align: center;
+    padding: 5px 5px;
+}

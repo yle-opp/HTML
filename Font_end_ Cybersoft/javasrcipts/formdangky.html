@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký/đăng nhập</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="text/javascript" src="./assets/js/valication.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <a id="dangky" href="#divdangky" class="tabdangkynhap"  onclick="onDangKi()">ĐĂNG KÝ</a>
+        <a id="dangnhap" href="#divdangnhap" class="tabdangkynhap"  onclick="onDangNhap()">ĐĂNG NHẬP</a>
+        
+        <div id="divdangky" class="divForm">
+            <!--  action="tranchu.php"> -->
+            <form name="frmDangKi"  action="#">
+                    <h2>đăng kí thành viên</h2>
+                    <hr>
+                    <div id="thongbao">
+                        <p id="pthongbao">
+
+                        </p>
+                    </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    Tên Đăng Nhập
+                                </td>
+                                <td>
+                                    <input  type="text" id="tendangnhap" name="tendangnhap" class="inputcss" placeholder="nhập tên đăng kí của bạn"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Mật Khẩu:
+                                </td>
+                                <td>
+                                    <input type="password" id="matkhau" name="matkhau" class="inputcss" placeholder="nhập mật khẩu của bạn"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Email:
+                                </td>
+                                <td>
+                                    <input type="text" id="email" name="email" class="inputcss"  placeholder="nhập email của bạn"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ngề Nghiệp: 
+                                </td>
+                                <td>
+                                    <select id="nghenghiep" class="drnghenghiep">
+                                        <option>Vui lòng chọn</option>
+                                        <option>Kỹ sư</option>
+                                        <option>CNTT</option>
+                                        <option>dev back-end</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tuổi : 
+                                </td>
+                                <td>
+                                    <input type="text" id="tuoi" name="tuoi" class="inputcss"  placeholder="nhập tuổi của bạn"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Giới tính :   
+                                </td>
+                                <td>
+                                    <input type="radio" id="nam" name="sex" value="En" class="inputcss" />
+                                    Nam 
+                                    <input type="radio" id="nu"  name="sex" value="En" class="inputcss" /> 
+                                    Nữ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td >
+                                    <input type="submit"  value="ĐĂNG KÝ" id="nutdangky"  class="tdbutton" onclick="return ktraHopLeDangky()" />
+                                
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;" class="inputcss">
+                                    Bạn đã có tài khoản? Vui lòng click <a href="#" onclick="onDangNhap()">ĐĂNG NHẬP</a>
+                                
+                                </td>
+
+                            </tr>
+                            
+
+                        </table>
+            </form>
+
+        </div>
+        <div id="divdangnhap" class="divForm">
+            <form name="frmDangNhap" action="trangchu.php">
+                <h2>đăng nhập</h2>
+                <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                Tên Đăng Nhập:
+                            </td>
+                            <td>
+                                <input  type="text" id="tentabdangnhap" name="tentabdangnhap" class="inputcss" placeholder="nhập tên đăng nhạp"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mật khẩu:
+                            </td>
+                            <td>
+                                <input  type="text" id="mkdangnhap" name="tendangnhap" class="inputcss" placeholder="nhập mật khẩu "/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input  type="checkbox" id="chckghinho"/> Ghi nhớ lần sau
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td >
+                                <a href="#" onclick="onDangKi()">Quên mật khẩu?</a>
+                            
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td >
+                                <input type="submit"  value="ĐĂNG KÝ" id="nutdangnhap" class="tdbutton"/>
+                            
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;" class="inputcss">
+                                Bạn chưa có tài khoản? Vui lòng click <a href="#" onclick="onDangKi()">ĐĂNG KÝ</a>
+                            
+                            </td>
+
+                        </tr>
+                        
+                    </table>
+
+            </form>
+
+        </div>
+
+        <p class="thongbao">
+
+        </p>
+        <p class="thongbao1"></p>
+
+    </div>
+</body>
+</html>

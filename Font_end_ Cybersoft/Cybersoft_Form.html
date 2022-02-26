@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Form</title>
+</head>
+<>
+        <form>
+            Họ lót: <br/>
+            <input type="text" name="hoten"  />
+            <br/>
+            Ten: <br/>
+            <input type="text" name="ten"  />
+            <br/>
+            password: <br/>
+            <input type="password" name="txtpassword"  />
+            <br/>
+            Hidden: <br/>
+            <input type="hidden" name="txthidden"  />
+            <hr/>
+            Checkbox group: <br/>
+            Anh văn : 
+            <input type="checkbox" name="languagse" value="En"  />
+            Hoa: 
+            <input type="checkbox" name="languagse" value="En" checked /> <!--checked chọn mặc định-->
+            Nhut: 
+            <input type="checkbox" name="languagse" value="En"  /> <br/>
+            Radio button group: <br/> 
+            <!-- phải đặt cùng 1 tên -->
+           Nam : 
+            <input type="radio" name="sex" value="En" checked />
+            Nữ: 
+            <input type="radio" name="sex" value="En" checked /> 
+            <br/><!--checked chọn mặc định-->
+            Radiobutton ví dụ 2 group: <br/>
+            Nam : 
+            <input type="radio" name="sex1" value="En" checked />
+            Nữ:
+            <input type="radio" name="sex2" value="En" checked /> <!--checked chọn mặc định-->
+            <br/>
+            Button submit: <br/>
+            <input  type="submit" name="btnSend" value="Send"/>
+            <br/> <br/>
+            <input  type="reset" name="btnRest" value="Reset"/>
+            <br/> <br/>có thể có nhiều nút button <br/>
+            <input  type="button" name="btnbutton" value="Button"/>
+        </form>
+        <br/>
+        <form action="post" name="FrmMain" enctype="multipart/form-data">
+            File Upload control : upload dữ liệu lên<br/>
+            <input type="file" name="fileupload"  />
+        </form>
+        <br/> <br/>
+        <textarea cols="2" rews="5" wrap="off">
+            This is a text on multiline
+
+        </textarea>
+        <br/> <br/>
+        Combobox -Dropdown box: 
+        <select name="DSSsofware">
+            <optgroup label="mulitimedia">
+                <option value="MXP">
+                    windown media 10
+                </option>
+                <option value="MXP">
+                   iphone 9
+                </option>
+
+            </optgroup>
+            <optgroup label="Operation">
+                <option value="MXP">
+                    windown media 11
+                </option>
+                <option value="MXP">
+                   iphone 13pro
+                </option>
+
+            </optgroup>
+
+        </select 
+
+           
+</body>
+</html>

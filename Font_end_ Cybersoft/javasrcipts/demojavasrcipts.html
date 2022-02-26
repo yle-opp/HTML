@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Myclass.vn</title>    
+</head>
+<body > 
+    <img src="https://myclass.vn/Assets/client/Layouts/images/LOGOMYCLASS-final.png" width="20%" style="float: right;">
+
+    <input type="text"  id="test2" onfocus="changecolor(1)" onblur="changecolor(3)">
+    <select id="chon" onchange="thaydoichon()">
+        <option>Viet Nam</option>
+        <option>USA</option>
+        <option>PHÁP</option>
+    </select>
+    <p id="xuat"></p>
+
+    <input type="button" id="nut" value="vong lap do while" onclick="vonglapWhile(1)"  onmouseover="changeColorButton(1)" onmouseout="changeColorButton(2)"  onmousedown="changeColorButton(3)" onmouseup="changeColorButton(4)"/>
+
+</body>
+
+<script type="text/javascript">
+    function KiemTraNhap(giatri) {
+        if(giatri==8){
+            alert("so tam");
+        }
+    }
+    // switch case 
+    function xethoclucsinhvie(dtb) {
+        var thongbao = "";
+       switch(dtb) {
+           case 9:
+           thongbao ="học lực xuất sắc"; break;
+           case 8:
+           thongbao ="học lực giỏi"; break;
+           case 7:
+           thongbao="học lực khá "; break;
+           case 6:
+           thongbao="học lực trung bình"; break;
+            default: "chưa xét được học lực"
+
+       }
+       alert(thongbao)
+    }
+    // switch case 
+    function xuat10cau() {
+        for(i=0; i<100 ;i+=2){
+            if(i%2 ==0 ){
+               document.write("Số chẳn thứ " + i + "<br/>");
+            }
+        }
+    }
+    function vonglapWhile(toida) {
+        
+               i = 1;
+               while (i< toida){
+                i++;
+                document.write("Số chẳn thứ " + i + "<br/>");
+               
+               }
+    }
+    function vonglapDoWhile(toida) {
+        
+        i = 1;
+        do {
+            i++;
+            document.write("Số chẳn thứ " + i + "<br/>");
+
+        }while (i< toida);
+        
+    }
+    // bài tạp sự kiện mà javascrips hổ trợ
+    function changecolor(choose){
+        var txt= document.getElementById("test2");
+        if(choose == 1 ){ // onfocus 
+           txt.style.border = "solid 4px red";
+        }else{ // onBlur
+            txt.style.border = "solid 4px gray";
+        }
+
+    }
+    // Ctrl + K + U => Chuyển comment thành code.
+     function thaydoichon(choose){
+         var theP= document.getElementById("xuat");
+         var dropdown = document.getElementById("chon");
+        theP.innerHTML = dropdown.value;// là ghi vào khoảng trống giữa thẻ của mọt thẻ <p> phần này là innerHTML </p>
+     }
+     function changeColorButton(thamso){
+         var nut = document.getElementById("nut");
+       if(thamso == 1){  //hover - rê chuột
+            nut.style.backgroundColor = "red";
+       }else if(thamso == 2){ //out
+        nut.style.backgroundColor = "blue";
+       }else if(thamso == 3){ //down
+        nut.style.backgroundColor = "yellow";
+       }else { //up
+        nut.style.backgroundColor = "blueviolet";
+       }
+     }
+</script>
+<input type="button" value="kich vao day" onclick="KiemTraNhap(8)"/>
+<input type="button" value="kiểm tra học lực" onclick="xethoclucsinhvie(8)"/>
+<input type="button" value="xuất 10 câu" onclick="xuat10cau()"/>
+<input type="button" value="vong lap while" onclick="vonglapDoWhile(1)" style="color:blueviolet "/>
+
+
+
+</html>

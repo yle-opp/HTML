@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+</head>
+<body>
+    <p id="noidung"></p>
+    <p class="demo">the p1</p>
+    <p>the p2</p>
+    <p class="demo">the p3</p>
+    <p>the p4</p>
+    <p class="demo">the p5</p>
+
+
+    <input type="button" id="nut" value="lay gia tri" onclick="laygiatri()"  />
+    <input type="button" id="nut" value="lay gia tri tab" onclick="laygiatriP2()"  />
+    <input type="button" id="nut" value="lay gia tri class" onclick="laygiatriClass()"  />
+</body>
+<script type="text/javascript">
+    function laygiatri(){
+        var theP = document.getElementById("noidung");
+        theP.innerHTML = "Xin chao Cybersoft";
+    }
+    function laygiatriP2(){
+        var tatcaP = document.getElementsByTagName("p");
+        alert("số thẻ P" + tatcaP.length + " nội dung thẻ p: " + tatcaP[3].innerHTML);
+    }
+    function laygiatriClass (){
+        var tatcaP = document.getElementsByClassName("demo")
+        alert("số class thẻ P" + tatcaP.length + " nội dung thẻ p: " + tatcaP[0].innerHTML);
+    }
+</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập nhỏ Number</title>
+</head>
+<body>
+    <!-- <form action="#">
+    Số a: <input type="text" id="sodong"/>
+    <br/>
+    Số b: <input type="text" id="socot"/>
+    <br/>
+    kết quả : <input type="text" id="ketqua"/>
+    <br/>
+    <input type="submit" value="tạo table động" onclick="tinhtong()"/>
+    </form>
+    <br/>
+    <div id="container">
+
+    </div>
+    <input type="button" value="xác nhận" onclick="XacNhan()"/>
+    <input type="button" value="xác nhận" onclick="Nhapdulieu()"/> 
+    -->
+    <!--Valition 1  -->
+    <form name="form1" action="#">
+        Name: <input type="text" name="username" />
+        <br/>
+        <input type="submit" value="kiểm tra nhập" onclick="return kiemtraInput()"/>
+
+    </form>
+    <p id="thongbao"></p>
+    <!--  -->
+</body>
+
+<script type="text/javascript">
+
+    function kiemtraminmax(){
+        var theP = document.getElementById("thongbao");
+        // var inputTen = document.forms["form1"]["username"] ;
+        var inputTen = document.form1.username ;
+        var giatriten = inputTen.value;
+        if(giatriten == ""){
+           // alert("Nhập vào một giá trị");
+           theP.style.display="block";
+            theP.innerHTML ="Nhập vào một giá trị";
+            theP.style.color = "red";
+            return flase;
+        }else{
+            //alert("bạn đã nhập rùi");
+            theP.style.display="none";
+            return true;
+        }
+      
+    }
+
+
+    function Nhapdulieu(){
+        var text;
+        text = prompt("vui lòng nhập vào tên của bạn");
+       document.write(text);
+    }
+    function XacNhan(){
+        var xacnhan;
+        xacnhan = confirm("bạn đã đánh giá khóa học này chưa ?");
+        if(xacnhan){
+            document.write("Xin cam on cac bạn");
+        }else{
+            document.write("vui long kich vào nút màu vàng");
+        }
+    }
+
+    function tinhtong(){
+        var sodongid = document.getElementById("sodong");
+        var socotid = document.getElementById("socot");
+
+        //NaN = not a number ->ham kiem tra so : isNaN (chuỗi)-- là số Flase - không phải số -> true 
+        if(isNaN(sodongid.value) || isNaN(socotid.value)){
+            alert("nhập vào số a và số b ")
+            return flase;
+
+        }else {
+            // soa = parseInt(soa.value);
+            // sob = parseInt(sob.value);
+            // var tong = soa+sob;
+            // ketqua.value = tong;
+            // Taoj table
+            /*
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </table>
+            
+            */
+            //lấy thẻ để tạo table 
+            var divId = document.getElementById("container");
+            //lấy số dòng , ssos cột nhập thành số 
+            var sodong = parseInt(sodongid.value);
+            var socot = parseInt(socotid.value);
+            
+            //tạo thẻ table 
+            var tagTable = document.createElement("table");
+            tagTable.border = 1;
+
+            for(i=0 ; i < sodong ; i++){
+                //tạo số dòng 
+                var tagTR = document.createElement("tr");
+                tagTable.appendChild(tagTR);
+                //tạo cột
+                for(j=0 ; j < socot; j++){
+                    var tagTd = document.createElement("td");
+                    var textNode = document.createTextNode("Ô " + i + "," +j);
+                    tagTd.appendChild(textNode);
+                    tagTR.appendChild(tagTd);
+                    tagTable.appendChild(tagTd);
+                     
+                }
+            }
+            divId.appendChild(tagTable);
+            return true;
+        }
+    }
+</script>
+</html>
