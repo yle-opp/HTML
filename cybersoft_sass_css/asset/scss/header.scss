@@ -1,0 +1,18 @@
+//MEDIA QUERY áp dụng trong reponsive 
+//MEDIA QUERY KẾT HỢP IF
+.tachfilescss{
+    h3 {
+        color: red;
+        font-size: 60px;
+        // vì css đọc từ trên xuống dưới nên lấy màn hình to để trên cái màn hình nhỏ  
+        @media screen and (max-width:768px){
+            color: green;
+            font-size: 90px;
+        }
+        //khi màn hình thu nhỏ 576px
+        @media screen and (max-width:576px){
+            color: aquamarine;
+            font-size: 30px;
+        }
+    }
+}

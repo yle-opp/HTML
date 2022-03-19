@@ -1,0 +1,114 @@
+$heading-colr:red;
+$heading-font-size:40px;
+$heading-letter-spacing:10px;
+h1 {
+        color: $heading-colr;
+        font-size:$heading-font-size;
+        letter-spacing:$heading-letter-spacing;
+
+ }
+ .header {
+     h2{
+        font-size: 40px;
+        font-weight: normal;
+        color: blue;
+        &:hover{
+            color: aqua;
+            font-size: 20px;
+        }
+     }
+     span {
+         color: red;
+         letter-spacing: 10px;
+
+     }
+     p{
+         color: green;
+         margin-top: 40px;
+     }
+        
+
+
+ }
+
+ //miXIN
+ @mixin heading-style {
+    color: brown;
+    font-size: 60px;
+    letter-spacing: 20px;
+ }
+   //miXIN hàm có tham số 
+@mixin footer-style ($color,$font-size,$letter-spacing) {
+    color:$color;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    $translate : translate(100px,200px);
+    transform: $translate;
+ }
+// có thể khai báo biến trong mixin
+ .headermixin {
+     h2{
+        @include heading-style;
+     }
+ }
+
+ .footermixin {
+    h2{
+       // @include heading-style;
+       @include footer-style(blue,40px,10px);
+    }
+ }
+
+ // extend kế thừ class @extend và có thuộc tính cho chính minh
+ h4 {
+    color: olivedrab;
+    font-size: 60px;
+    letter-spacing: 20px;
+ }
+ .extend {
+     h3 {
+        @extend h4;
+        background-color: bisque;
+     }
+ }
+
+//if else @if @else if
+$heading-color : blue;
+.ifelse {
+    h4 {
+     color: $heading-colr;
+     @if $heading-colr == red{
+            background-color: aqua;
+     }
+     @else if $heading-colr == blue {
+        background-color: violet;
+     }
+     @else {
+         background-color: coral;
+     }
+    }
+}
+//for
+.for {
+@for $thamso from  1 through 3 {
+    .heading-#{$thamso} { // tạo ra class heading
+        font-size: 20px * $thamso;
+    }
+}
+}
+//while
+$size : 1 ;
+.while {
+    @while $size < 4 {
+        .heading-#{$size} { // tạo ra class heading-1 //  heading-2 //  heading-3 //
+            font-size: 60px / $size;
+        }
+        $size: $size + 1;
+    }
+}
+// TÁCH FILE SCSS
+@import 'header.scss';
+@import 'footer.scss';
+
+//MEDIA QUERY áp dụng trong reponsive 
+//TỔ CHỨC BỘ CỤC FOLDER SASS

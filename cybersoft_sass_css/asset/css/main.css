@@ -1,0 +1,90 @@
+h1 {
+  color: red;
+  font-size: 40px;
+  letter-spacing: 10px; }
+
+.header h2 {
+  font-size: 40px;
+  font-weight: normal;
+  color: blue; }
+  .header h2:hover {
+    color: aqua;
+    font-size: 20px; }
+.header span {
+  color: red;
+  letter-spacing: 10px; }
+.header p {
+  color: green;
+  margin-top: 40px; }
+
+.headermixin h2 {
+  color: brown;
+  font-size: 60px;
+  letter-spacing: 20px; }
+
+.footermixin h2 {
+  color: blue;
+  font-size: 40px;
+  letter-spacing: 10px;
+  transform: translate(100px, 200px); }
+
+h4, .extend h3 {
+  color: olivedrab;
+  font-size: 60px;
+  letter-spacing: 20px; }
+
+.extend h3 {
+  background-color: bisque; }
+
+.ifelse h4, .ifelse .extend h3, .extend .ifelse h3 {
+  color: red;
+  background-color: aqua; }
+
+.for .heading-1 {
+  font-size: 20px; }
+.for .heading-2 {
+  font-size: 40px; }
+.for .heading-3 {
+  font-size: 60px; }
+
+.while .heading-1 {
+  font-size: 60px; }
+.while .heading-2 {
+  font-size: 30px; }
+.while .heading-3 {
+  font-size: 20px; }
+
+.tachfilescss h3 {
+  color: red;
+  font-size: 60px; }
+  @media screen and (max-width: 768px) {
+    .tachfilescss h3 {
+      color: green;
+      font-size: 90px; } }
+  @media screen and (max-width: 576px) {
+    .tachfilescss h3 {
+      color: aquamarine;
+      font-size: 30px; } }
+
+.footerfile h3 {
+  color: palevioletred;
+  font-size: 60px; }
+  @media screen and (max-width: 768px) {
+    .footerfile h3 {
+      color: greenyellow;
+      font-size: 90px; } }
+  @media screen and (max-width: 576px) {
+    .footerfile h3 {
+      color: gray;
+      font-size: 40px; } }
+.footerfile .khung {
+  width: 50px;
+  height: 50px;
+  background-color: red; }
+  @media screen and (max-width: 576px) {
+    .footerfile .khung {
+      width: 200px;
+      height: 200px;
+      background-color: grey; } }
+
+/*# sourceMappingURL=main.css.map */

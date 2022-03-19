@@ -1,0 +1,141 @@
+
+* {
+    /* emmet (viet tắt) */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+
+}
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    
+
+}
+.form-dang-nhap {
+    background-color: #3b5998;
+}
+.form-field {
+    float: left;
+    width: 33.33%;
+    padding: 10px 10px;
+    color: white;
+    
+}
+.clear {
+    clear: both;
+}
+.form-field input[type="text"], .form-field input[type="password"] {
+    width: 100%;
+    margin: 5px 0;
+    height: 30px;
+    padding: 5px 5px;
+}
+.form-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.form-field a:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+.btnsubmit {
+    background-color: #2d56ac;
+    border: 1px solid #000;
+    padding: 6px 20px;
+    color: white;
+    margin-top: 24px;
+
+
+}
+.btnsubmit:hover{
+  
+    background-color: #0051ff;
+    cursor: pointer;
+}
+
+.form-field input[type="checkbox"]{
+    transform: translate(0,2px);
+    /* di chuyển thuộc tính 
+        0 nếu là dương thì di chuyển lên trên (top, botoom)
+        2px nếu là giá trị dương di chuyển lên phải (right left)
+    */
+}
+.form-dang-ky {
+    background-color: rgb(239, 241, 246);
+    padding: 20px 20px;
+    height: 500px
+}
+.formDK-tittle p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formDK-tittle {
+    border-bottom: 1.5px solid grey;
+    margin-bottom: 20px;
+
+}
+/* maxlengt chiều dài tối da của ô input */
+/* readonly chỉ có thể đọc không gtheer chỉnh sửa */
+/* lable là inline - đối với inline thì độ chữ dài bao nhiêu thì chiều dài của nó bấy nhiêu */
+.formDK-field label{
+    display: inline-block; /*có thể set margin left và bootom*/
+    width: 25%;
+    
+}
+.formDK-field input[type="text"], .formDK-field input[type="number"] {
+    /* width: 70%;
+    height: 30%; */
+    width: 70%;
+    padding: 5px 5px;
+
+} 
+
+.formDK-field  {
+    margin-bottom: 10px;
+}
+.formDK-field textarea {
+    width: 70%;
+}
+.formDK-Hobbies label{
+    vertical-align: top;
+}
+#radioid {
+  
+   padding: 5px 5px;
+}
+.formDK-brightday select{
+    padding: 5px 5px ;
+    margin-right: 5px;
+    
+}
+/* .formDK-brightday {
+    height: 30px;
+    padding: 20px;
+    
+    
+} */
+
+.btnSignUp {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    float: right;
+    border-radius: 6px;
+}
+
+.btnSignUp:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+    
+}
+.formDK-btn {
+    margin-top: 10px;
+    text-align: center;
+}

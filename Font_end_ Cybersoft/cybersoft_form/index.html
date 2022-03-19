@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--BEGIN FORM ĐĂNG NHẬP -->
+        <div class="form-dang-nhap">
+            <form action="#" name="dangnhap" method="get">
+                <div class="form-field email-field">
+                    <label for="txtEmail">Email </label>
+                    <!-- nếu truyền đúng id tương ứng vào for của lable thì khi nhấn lable sẽ được forcous  -->
+                    <input type="text"  id="txtEmail" placeholder="vui lòng nhập email" />
+                    <input type="checkbox"    />
+                    <span>Duy trì đăng nhập</span>
+                </div>
+                <div class="form-field password-field">
+                    <label for="txtPassword">Password </label>
+                    <input type="password" id="txtPassword"  placeholder="vui lòng nhập password" />
+                    <a href="#">Quên mật khẩu ?</a>
+                </div>
+                <div class="form-field btn-field">
+                    <button class="btnsubmit">Submit</button>
+                </div>
+                <div class="clear"></div>
+            </form>
+
+        </div>
+        <!--END FORM ĐĂNG NHẬP -->
+
+
+
+           <!-- FORM ĐĂNG KÝ -->
+        <div class="form-dang-ky">
+            <div class="formDK-tittle">
+                <h1>Sign Up</h1>
+                <p>It's free and always will be.</p>
+
+            </div>
+            <div class="formDK-content">
+               <div class="formDK-field formDK-fisrt-name">
+                   <label for="txtFisrtname">Fisrt Name</label>
+                   <input type="text" id="txtFisrtname"/>
+               </div>
+               <div class="formDK-field formDK-last-name">
+                    <label for="txtLastname">Last Name</label>
+                    <input type="text" id="txtLastname"/>
+               </div>
+               <div class="formDK-field formDK-fisrt-name">
+                    <label for="txtEmail">Email </label>
+                    <input type="text" id="txtEmail"/>
+               </div>
+
+               <div class="formDK-field formDK-Email">
+                    <label for="txtFisrtname">Phone Number: </label>
+                    <input type="number" id="txtPhoneNumber"/>
+               </div>
+
+              <div class="formDK-field ">
+                    <label for="radio">Your are </label>
+                    <input type="radio" id="radioid" name="job"/> Công nhân
+                    <input type="radio" id="radioid" name="job"/> Công chức
+                    <input type="radio" id="radioid" name="job"/> Sinh viên
+               </div>
+               <div class="formDK-field formDK-Hobbies">
+                     <label for="">Hobbies</label>
+                    <textarea id=""  rows="5"></textarea>
+
+               </div>
+
+               <div class="formDK-field formDK-brightday">
+                <label for="">Bright Day</label>
+                    <select>
+                        <option>Choose day </option>
+                        <option>Ngày 1</option>
+                        <option>Ngày 2 </option>
+                        <option>Ngày 3</option>
+                        <option>Ngày 4</option>
+                        <option>Ngày 5</option>
+                        <option>Ngày 6</option>
+                        <option>Ngày 7</option>
+                        <option>Ngày 8</option>
+                        <option>Ngày 9</option>
+                        <option>Ngày 10</option>
+                    </select>
+                    <select>
+                        <option>Choose month</option>
+                        <option>Tháng 1</option>
+                        <option>Tháng 2 </option>
+                        <option>Tháng 3</option>
+                        <option>Tháng 4</option>
+                        <option>Tháng 5</option>
+                        <option>Tháng 6</option>
+                        <option>Tháng 7</option>
+                        <option>Tháng 8</option>
+                        <option>Tháng 9</option>
+                        <option>Tháng 10</option>
+                    </select>
+                    <select>
+                        <option>Choose year</option>
+                        <option>Năm 2000 </option>
+                        <option>Năm 2001</option>
+                        <option>Năm 2002</option>
+                        <option>Năm 2003</option>
+                        <option>Năm 2004</option>
+                        <option>Năm 2005</option>
+                        <option>Năm 2006</option>
+                        <option>Năm 2007</option>
+                        <option>Năm 2008</option>
+                    </select>
+
+                </div>
+
+                <div class="formDK-field formDK-btn">
+                    <button class="btnSignUp">Sign Up</button>
+
+              </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
